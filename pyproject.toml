@@ -1,0 +1,25 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mosaicpy"
+version = "0.0.1"
+description = "Access the Modern Ocean Sediment Archive and Inventory of Carbon database"
+readme = "README.md"
+authors = [{ name = "Sarah Paradis", email = "sparadis@ethz.ch" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["database", "carbon", "marine sediments", "earth science", "open data"]
+dependencies = [
+    "requests",
+    "pandas"]
+
+[project.urls]
+Homepage = "https://mosaic.ethz.ch"
